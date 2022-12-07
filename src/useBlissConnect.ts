@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 import useScript from 'react-script-hook';
+import { StartOptions } from './entities/StartOptions';
 
 type ConnectStatus = 'closed' | 'opening' | 'open';
 
