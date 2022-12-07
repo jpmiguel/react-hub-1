@@ -21,12 +21,12 @@ also retrieve this information by using webhooks or the API.
 import { useBlissConnect } from '@blissapi/react-component';
 
 const LinkAccountButton = () => {
-  const { start } = useBlissConnect();
+  const { startConnect } = useBlissConnect();
 
   const startFlow = useCallback(async () => {
     const sessionToken = await retrieveConnectSessionToken();
-    start({ sessionToken });
-  }, [start]);
+    startConnect({ sessionToken });
+  }, [startConnect]);
 
   return (
     <button onClick={startFlow}>Connect Account</button>
@@ -37,9 +37,9 @@ const LinkAccountButton = () => {
 ### Connect Options
 When starting the flow, you may pass a few options:
 ```jsx
-const { start } = useBlissConnect();
+const { startConnect } = useBlissConnect();
 
-start(options)
+startConnect(options)
 ```
 
 | Name                    | Type        | Required    | Description         |

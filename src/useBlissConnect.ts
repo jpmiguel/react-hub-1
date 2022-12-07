@@ -1,18 +1,18 @@
-import { useCallback, useEffect, useState } from 'react';
+import * as React from 'react';
 import useScript from 'react-script-hook';
 import { StartOptions } from './entities/StartOptions';
 
 type ConnectStatus = 'closed' | 'opening' | 'open';
 
-export const useBlissConnect = ({ connectUrl }: { connectUrl?: string }) => {
-  const [status, setStatus] = useState<ConnectStatus>('closed');
-  const [options, setOptions] = useState<StartOptions>();
+function useBlissConnect({ connectUrl }: { connectUrl?: string } = {}) {
+  const [status, setStatus] = React.useState<ConnectStatus>('closed');
+  const [options, setOptions] = React.useState<StartOptions>();
   const [loading, error] = useScript({
     src: connectUrl || 'http://localhost:3000/vite-dev/entrypoints/connect.ts',
     checkForExisting: true,
   });
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (status === 'open' || status === 'closed') return;
     if (error) {
       if (status === 'opening') setStatus('closed');
@@ -32,7 +32,7 @@ export const useBlissConnect = ({ connectUrl }: { connectUrl?: string }) => {
     }
   }, [error, loading, status, options]);
 
-  const startConnect = useCallback(
+  const startConnect = React.useCallback(
     (options: StartOptions) => {
       if (error) throw 'Could not initiate BlissConnect.';
       if (status === 'open') return;
@@ -45,3 +45,5 @@ export const useBlissConnect = ({ connectUrl }: { connectUrl?: string }) => {
 
   return { startConnect };
 };
+
+export { useBlissConnect };
