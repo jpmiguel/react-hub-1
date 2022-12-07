@@ -1,9 +1,10 @@
 {
   "name": "@blissapi/react-connect",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "author": "BlissAPI",
   "license": "MIT",
+  "private": false,
   "scripts": {
     "build": "rollup -c rollup.config.mjs",
     "dev": "rollup -c rollup.config.mjs -w",
@@ -27,5 +28,8 @@
   },
   "dependencies": {
     "react-script-hook": "^1.7.2"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }
