@@ -8,7 +8,7 @@ function useBlissConnect({ connectUrl }: { connectUrl?: string } = {}) {
   const [status, setStatus] = React.useState<ConnectStatus>('closed');
   const [options, setOptions] = React.useState<StartOptions>();
   const [loading, error] = useScript({
-    src: connectUrl || 'http://localhost:3000/vite-dev/entrypoints/connect.ts',
+    src: connectUrl || 'https://app.everauth.dev/stackone/connect.ts',
     checkForExisting: true,
   });
 
