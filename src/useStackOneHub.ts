@@ -8,7 +8,7 @@ function useStackOneHub({ connectUrl }: { connectUrl?: string } = {}) {
   const [status, setStatus] = React.useState<ConnectStatus>('closed');
   const [options, setOptions] = React.useState<StartOptions>();
   const [loading, error] = useScript({
-    src: connectUrl || 'https://app.stackone.com/stackone/connect.ts',
+    src: connectUrl || 'https://app.stackone.com/stackone/connect.js',
     checkForExisting: true,
   });
 
