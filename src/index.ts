@@ -1,1 +1,1 @@
-export { useBlissConnect } from './useBlissConnect';
+export { useStackOneHub } from './useStackOneHub';
