@@ -1,15 +1,15 @@
-# BlissAPI Connect For React
-Allow your users to quickly integrate with several services with BlissAPI. The `@blissapi/react-connect`
+# StackOne Hub For React
+Allow your users to quickly integrate with several services with StackOne. The `@stackone/react-hub`
 introduces an easy-to-use React hook for integrating with your web app.
 
 ## Install
 
 ```
 # NPM
-npm install --save @blissapi/react-connect
+npm install --save @stackone/react-hub
 
 # Yarn
-yarn add @blissapi/react-connect
+yarn add @stackone/react-hub
 ```
 
 ## Usage
@@ -18,10 +18,10 @@ the flow has been cancelled. The callback will give you the information about th
 also retrieve this information by using webhooks or the API.
 
 ```jsx
-import { useBlissConnect } from '@blissapi/react-component';
+import { useStackOneHub } from '@stackone/react-hub';
 
 const LinkAccountButton = () => {
-  const { startConnect } = useBlissConnect();
+  const { startConnect } = useStackOneHub();
 
   const startFlow = useCallback(async () => {
     const sessionToken = await retrieveConnectSessionToken();
@@ -37,7 +37,7 @@ const LinkAccountButton = () => {
 ### Connect Options
 When starting the flow, you may pass a few options:
 ```jsx
-const { startConnect } = useBlissConnect();
+const { startConnect } = useStackOneHub();
 
 startConnect(options)
 ```

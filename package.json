@@ -1,9 +1,9 @@
 {
-  "name": "@blissapi/react-connect",
+  "name": "@stackone/react-hub",
   "version": "1.0.8",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
-  "author": "BlissAPI",
+  "author": "StackOne",
   "license": "MIT",
   "private": false,
   "scripts": {
