@@ -49,3 +49,10 @@ startConnect(options)
 | **onSuccess(account)**  | function    | No          | Called when an account is successfully linked. The `account` param gives you information about the linked account.
 | **onCancel()**          | function    | No          | Called when the connect flow is closed without an account being linked.
 | **onClose()**           | function    | No          | Called every time the connect flow is closed regardless of whether an account has been linked or not.
+
+
+## Release
+
+Every PR merged to the main branch will create a new tag and draft release
+
+publishing the new release on Github will also publish th new package version to NPM
