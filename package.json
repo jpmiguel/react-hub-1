@@ -12,6 +12,7 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint \"src/**/*.ts\"",
     "lint:fix": "yarn lint --fix",
+    "test": "npm run lint",
     "semantic-release": "semantic-release"
   },
   "devDependencies": {
