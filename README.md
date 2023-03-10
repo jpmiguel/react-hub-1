@@ -57,6 +57,4 @@ This repose uses [conventional commit](https://www.conventionalcommits.org/en/v1
 
 ## Release
 
-Every PR merged to the main branch will create a new tag and draft release
-
-publishing the new release on Github will also publish th new package version to NPM
+Use the Manual release workflow to trigger a release. The package version and changelog will automatically be generated based on [conventinal commits](https://www.conventionalcommits.org/en/v1.0.0/).
