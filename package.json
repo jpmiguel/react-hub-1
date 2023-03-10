@@ -11,7 +11,7 @@
     "dev": "rollup -c rollup.config.mjs -w",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint \"src/**/*.ts\"",
-    "lint:fix": "npm lint --fix",
+    "lint:fix": "npm run lint --fix",
     "test": "npm run lint",
     "semantic-release": "semantic-release"
   },
