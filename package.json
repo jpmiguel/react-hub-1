@@ -61,7 +61,7 @@
     "url": "https://github.com/StackOneHQ/react-hub/issues"
   },
   "homepage": "https://github.com/StackOneHQ/react-hub#readme",
-  "publishConfig": {
-    "access": "restricted"
+  "volta": {
+    "node": "18"
   }
 }
