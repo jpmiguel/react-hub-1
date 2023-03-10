@@ -6,6 +6,7 @@
   "author": "StackOne",
   "license": "MIT",
   "private": false,
+  "typings": "dist/index.d.ts",
   "scripts": {
     "build": "rollup -c rollup.config.mjs",
     "dev": "rollup -c rollup.config.mjs -w",
