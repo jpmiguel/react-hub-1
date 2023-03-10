@@ -1,15 +1,16 @@
-# BlissAPI Connect For React
-Allow your users to quickly integrate with several services with BlissAPI. The `@blissapi/react-connect`
+# StackOne Hub For React
+Allow your users to quickly integrate with several services with StackOne. The `@stackone/react-hub`
 introduces an easy-to-use React hook for integrating with your web app.
+
 
 ## Install
 
 ```
 # NPM
-npm install --save @blissapi/react-connect
+npm install --save @stackone/react-hub
 
 # Yarn
-yarn add @blissapi/react-connect
+yarn add @stackone/react-hub
 ```
 
 ## Usage
@@ -18,10 +19,10 @@ the flow has been cancelled. The callback will give you the information about th
 also retrieve this information by using webhooks or the API.
 
 ```jsx
-import { useBlissConnect } from '@blissapi/react-component';
+import { useStackOneHub } from '@stackone/react-hub';
 
 const LinkAccountButton = () => {
-  const { startConnect } = useBlissConnect();
+  const { startConnect } = useStackOneHub();
 
   const startFlow = useCallback(async () => {
     const sessionToken = await retrieveConnectSessionToken();
@@ -37,7 +38,7 @@ const LinkAccountButton = () => {
 ### Connect Options
 When starting the flow, you may pass a few options:
 ```jsx
-const { startConnect } = useBlissConnect();
+const { startConnect } = useStackOneHub();
 
 startConnect(options)
 ```
@@ -49,3 +50,11 @@ startConnect(options)
 | **onSuccess(account)**  | function    | No          | Called when an account is successfully linked. The `account` param gives you information about the linked account.
 | **onCancel()**          | function    | No          | Called when the connect flow is closed without an account being linked.
 | **onClose()**           | function    | No          | Called every time the connect flow is closed regardless of whether an account has been linked or not.
+
+## Contribute & Release
+
+This repose uses [conventional commit](https://www.conventionalcommits.org/en/v1.0.0/). The repo use semantic-release and the package version is automatically determined based on the commit messages. 
+
+## Release
+
+Use the Manual release workflow to trigger a release. The package version and changelog will automatically be generated based on [conventinal commits](https://www.conventionalcommits.org/en/v1.0.0/).

@@ -4,11 +4,11 @@ import { StartOptions } from './entities/StartOptions';
 
 type ConnectStatus = 'closed' | 'opening' | 'open';
 
-function useBlissConnect({ connectUrl }: { connectUrl?: string } = {}) {
+function useStackOneHub({ connectUrl }: { connectUrl?: string } = {}) {
   const [status, setStatus] = React.useState<ConnectStatus>('closed');
   const [options, setOptions] = React.useState<StartOptions>();
   const [loading, error] = useScript({
-    src: connectUrl || 'https://app.everauth.dev/stackone/connect.ts',
+    src: connectUrl || 'https://app.stackone.com/stackone/connect.js',
     checkForExisting: true,
   });
 
@@ -34,7 +34,7 @@ function useBlissConnect({ connectUrl }: { connectUrl?: string } = {}) {
 
   const startConnect = React.useCallback(
     (options: StartOptions) => {
-      if (error) throw 'Could not initiate BlissConnect.';
+      if (error) throw 'Could not initiate StackOne Hub.';
       if (status === 'open') return;
 
       setOptions(options);
@@ -44,6 +44,6 @@ function useBlissConnect({ connectUrl }: { connectUrl?: string } = {}) {
   );
 
   return { startConnect };
-};
+}
 
-export { useBlissConnect };
+export { useStackOneHub };
