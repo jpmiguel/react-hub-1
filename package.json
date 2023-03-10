@@ -12,8 +12,7 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint \"src/**/*.ts\"",
     "lint:fix": "npm run lint --fix",
-    "test": "npm run lint",
-    "semantic-release": "semantic-release"
+    "test": "npm run lint"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^23.0.3",
@@ -48,7 +47,7 @@
   "description": "Allow your users to quickly integrate with several services with StackOne. The `@stackone/react-hub` introduces an easy-to-use React hook for integrating with your web app.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/StackOneHQ/react-hub-test.git"
+    "url": "https://github.com/glebedel/react-hub.git"
   },
   "keywords": [
     "stackone",
@@ -58,9 +57,9 @@
     "connect"
   ],
   "bugs": {
-    "url": "https://github.com/StackOneHQ/react-hub-test/issues"
+    "url": "https://github.com/glebedel/react-hub/issues"
   },
-  "homepage": "https://github.com/StackOneHQ/react-hub-test#readme",
+  "homepage": "https://github.com/glebedel/react-hub#readme",
   "volta": {
     "node": "18"
   }
