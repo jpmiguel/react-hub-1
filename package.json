@@ -64,6 +64,6 @@
   },
   "homepage": "https://github.com/glebedel/react-hub#readme",
   "volta": {
-    "node": "18"
+    "node": "18.14.0"
   }
 }
