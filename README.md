@@ -57,4 +57,4 @@ This repose uses [conventional commit](https://www.conventionalcommits.org/en/v1
 
 ## Release
 
-Use the Manual release workflow to trigger a release. The package version and changelog will automatically be generated based on [conventinal commits](https://www.conventionalcommits.org/en/v1.0.0/).
+Use the Manual release workflow to trigger a release. The package version and changelog will automatically be generated based on [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/).
