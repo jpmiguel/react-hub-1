@@ -1,47 +1,75 @@
 {
-  "name": "@stackone/react-hub",
-  "version": "1.0.9",
-  "description": "StackOne Hub for React",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
-  "author": "StackOne",
-  "license": "MIT",
-  "private": false,
-  "typings": "dist/index.d.ts",
-  "scripts": {
-    "build": "rollup -c rollup.config.mjs",
-    "dev": "rollup -c rollup.config.mjs -w",
-    "format": "prettier --write \"src/**/*.ts\"",
-    "lint": "eslint \"src/**/*.ts\"",
-    "lint:fix": "yarn lint --fix"
-  },
-  "devDependencies": {
-    "@rollup/plugin-commonjs": "^23.0.3",
-    "@rollup/plugin-node-resolve": "^15.0.1",
-    "@rollup/plugin-terser": "^0.1.0",
-    "@types/react": "^18.0.25",
-    "@typescript-eslint/eslint-plugin": "^5.42.1",
-    "@typescript-eslint/parser": "^5.42.1",
-    "babel-plugin-add-module-exports": "^1.0.4",
-    "babel-plugin-typescript-to-proptypes": "^2.0.0",
-    "eslint": "^8.27.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^2.7.1",
-    "react": "^18.2.0",
-    "rollup": "^3.2.5",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-typescript2": "^0.34.1",
-    "tslib": "^2.4.1",
-    "typescript": "^4.8.4"
-  },
-  "dependencies": {
-    "react-script-hook": "^1.7.2"
-  },
-  "peerDependencies": {
-    "react": "^18.2.0"
-  },
-  "files": [
-    "dist"
-  ]
+    "name": "@stackone/react-hub",
+    "version": "1.09",
+    "main": "dist/index.cjs.js",
+    "module": "dist/index.esm.js",
+    "author": "StackOne",
+    "license": "MIT",
+    "private": false,
+    "typings": "dist/index.d.ts",
+    "scripts": {
+        "build": "rollup -c rollup.config.mjs",
+        "dev": "rollup -c rollup.config.mjs -w",
+        "format": "prettier --write \"src/**/*.ts\"",
+        "lint": "eslint \"src/**/*.ts\"",
+        "lint:fix": "npm run lint --fix",
+        "test": "npm run lint",
+        "prepare": "husky install",
+        "semantic-release": "semantic-release",
+        "semantic-release:dry": "semantic-release --dry-run"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^17.4.4",
+        "@commitlint/config-conventional": "^17.4.4",
+        "@rollup/plugin-commonjs": "^23.0.3",
+        "@rollup/plugin-node-resolve": "^15.0.1",
+        "@rollup/plugin-terser": "^0.1.0",
+        "@semantic-release/changelog": "^6.0.2",
+        "@semantic-release/git": "^10.0.1",
+        "@types/react": "^18.0.25",
+        "@typescript-eslint/eslint-plugin": "^5.42.1",
+        "@typescript-eslint/parser": "^5.42.1",
+        "babel-plugin-add-module-exports": "^1.0.4",
+        "babel-plugin-typescript-to-proptypes": "^2.0.0",
+        "eslint": "^8.27.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "husky": "^8.0.3",
+        "prettier": "^2.7.1",
+        "react": "^18.2.0",
+        "rollup": "^3.2.5",
+        "rollup-plugin-peer-deps-external": "^2.2.4",
+        "rollup-plugin-typescript2": "^0.34.1",
+        "semantic-release": "^20.1.1",
+        "tslib": "^2.4.1",
+        "typescript": "^4.8.4"
+    },
+    "dependencies": {
+        "react-script-hook": "^1.7.2"
+    },
+    "peerDependencies": {
+        "react": "^18.2.0"
+    },
+    "files": [
+        "dist"
+    ],
+    "description": "Allow your users to quickly integrate with several services with StackOne. The `@stackone/react-hub` introduces an easy-to-use React hook for integrating with your web app.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/StackOneHQ/react-hub.git"
+    },
+    "keywords": [
+        "stackone",
+        "react",
+        "hub",
+        "integrations",
+        "connect"
+    ],
+    "bugs": {
+        "url": "https://github.com/StackOneHQ/react-hub/issues"
+    },
+    "homepage": "https://github.com/StackOneHQ/react-hub#readme",
+    "volta": {
+        "node": "18.14.0"
+    }
 }
