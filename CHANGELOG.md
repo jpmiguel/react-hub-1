@@ -1,3 +1,10 @@
+## [1.0.12](https://github.com/StackOneHQ/react-hub/compare/v1.0.11...v1.0.12) (2024-02-23)
+
+
+### Bug Fixes
+
+* trigger release for updated peerDep version ([#14](https://github.com/StackOneHQ/react-hub/issues/14)) ([5fddec0](https://github.com/StackOneHQ/react-hub/commit/5fddec0ab43a8cd6cf15af79487741ddeaf44810))
+
 ## [1.0.11](https://github.com/StackOneHQ/react-hub/compare/v1.0.10...v1.0.11) (2023-03-29)
 
 
