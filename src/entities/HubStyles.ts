@@ -10,7 +10,7 @@ interface OptionsStyles {
     bgColor?: string;
 }
 
-export interface ConnectStyles {
+export interface HubStyles {
     inline?: InlineStyles;
     options?: OptionsStyles;
 }

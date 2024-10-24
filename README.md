@@ -67,7 +67,7 @@ const styles = {
 | ----------------------- | ----------- | ----------- | ------------------- |
 | **sessionToken**        | string      | **Yes**     | Connect session token created in the backend. The session token allows users to manage their accounts in the frontend. You may limit a connect session token to selected categories or to a given service
 | **apiUrl**              | string      | No          | Which API instance should it connect to. It will automatically infer it from your connect session.
-| **styles**              | ConnectStyles      | No          | Customize the aspect of the Connect flow.
+| **styles**              | HubStyles      | No          | Customize the aspect of the Connect flow.
 | **onSuccess(account)**  | function    | No          | Called when an account is successfully linked. The `account` param gives you information about the linked account.
 | **onCancel()**          | function    | No          | Called when the connect flow is closed without an account being linked.
 | **onClose()**           | function    | No          | Called every time the connect flow is closed regardless of whether an account has been linked or not.

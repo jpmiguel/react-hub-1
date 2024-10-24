@@ -1,10 +1,10 @@
 import { Account } from './Account';
-import { ConnectStyles } from './ConnectStyles';
+import { HubStyles } from './HubStyles';
 
 export interface StartOptions {
     sessionToken: string;
     apiUrl?: string;
-    styles?: ConnectStyles;
+    styles?: HubStyles;
     onSuccess?: (account: Account) => void;
     onCancel?: () => void;
     onClose?: () => void;
